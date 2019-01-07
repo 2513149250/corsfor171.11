@@ -52,8 +52,9 @@
 
                 $('#btnLogout').click(function () {
                     $.ajax({
-                        url: 'http://localhost:3000/logout',
+                        url: 'http://10.30.29.84:80/Text/logout.php',
                         type: 'GET',
+                        dataType:"json",
                         contentType: 'application/json;charset=utf-8',
                         xhrFields:{withCredentials:true},
                         success: function (res) {
